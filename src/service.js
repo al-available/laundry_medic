@@ -1,4 +1,4 @@
-import './css/main.css'
+import './css/service.css'
 
 // navigation bar 
 import { navBar } from './navbar'
