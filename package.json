@@ -5,6 +5,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
+    "merge": "git checkout gh-pages && git merge main --no-edit",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
