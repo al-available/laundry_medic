@@ -434,14 +434,14 @@ body {
 }
 
 
-.svc__img-wrap::before{
+/* .svc__img-wrap::before{
   content:"";
   position:absolute;
   inset:0;
   background:rgba(0,0,0,0.35);
   z-index:1;
   transition:background .4s ease;
-}
+} */
 
 
 .svc__box:hover .svc__img{
