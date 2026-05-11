@@ -11,7 +11,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -56,17 +56,17 @@ body {
 }
 
 .logo-main {
- font-size: 2.9rem;
+ font-size: 3rem;
   color: #2f80ed;
  letter-spacing: 0.1rem;
-  font-family: "Roboto Slab", serif;
+  font-family:Georgia, Times, 'Times New Roman', serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
 }
 
 .logo-sub {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3rem;
   color: #070c3c;
 }
@@ -122,7 +122,7 @@ body {
 }
 
 .mobile-logo h2 {
- font-size: 2.9rem;
+ font-size: 3rem;
   color: #2f80ed;
  letter-spacing: 0.1rem;
   font-family: "Roboto Slab", serif;
@@ -132,7 +132,7 @@ body {
 }
 
 .mobile-logo p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3rem;
   color: #0d2545;
 }
@@ -258,11 +258,13 @@ body {
   font-size: 4rem;
   margin: 1rem 0;
   color: #222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact-section__subtitle {
   font-size: 1.6rem;
   color: #666;
+  font-family:  Georgia, 'Times New Roman', Times, serif;;
 }
 
 .contact-section__layout {
@@ -281,8 +283,9 @@ body {
 }
 
 .contact-form__label {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
+  font-family:  Georgia, 'Times New Roman', Times, serif;;
 }
 
 .contact-form__input,
@@ -353,7 +356,7 @@ body {
   background: #25d366;
   color: #fff;
   padding: 1.4rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   border-radius: 1rem;
   text-decoration: none;
 }
@@ -462,7 +465,7 @@ body {
   }
 
   .contact-section__title{
-    font-size:2.6rem;
+    font-size:4.6rem;
   }
 
   .contact-section__subtitle{
@@ -503,7 +506,7 @@ body {
   html{font-size:52%;}
 
   .contact-section__title{
-    font-size:2.2rem;
+    font-size:4.2rem;
   }
     .contact-form__label {
   margin-bottom: 4rem;
@@ -517,7 +520,7 @@ body {
 }
 
   .contact-info__whatsapp{
-    font-size:1.2rem;
+    font-size:1.8rem;
     padding:1.2rem;
   }
 }

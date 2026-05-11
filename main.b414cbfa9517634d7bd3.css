@@ -351,33 +351,6 @@ body {
   fill:#bfbfbf;
 }
 
-.chat-widget{
-  position:fixed;
-  bottom:3rem;
-  right:3rem;
-  width:6.5rem;
-  height:6.5rem;
-  border-radius:50%;
-  background:linear-gradient(135deg,#25d366,#128c7e);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  box-shadow:0 1rem 3rem rgba(0,0,0,0.4);
-  transition:all 0.3s ease;
-}
-
-.chat-widget:hover{
-  transform:scale(1.1);
-  box-shadow:0 1.5rem 4rem rgba(0,0,0,0.6);
-}
-
-.chat-icon{
-  width:2.8rem;
-  height:2.8rem;
-  fill:#ffffff;
-}
-
 .svc{
   padding:6rem 6rem;
   text-align:center;
@@ -679,7 +652,7 @@ body {
 
 
 .ft {
-  margin-top: 2rem;
+  margin-top:0;
   background: #0b0c0f;
   color: #d1d5db;
   padding: 6rem 4rem 2rem;
