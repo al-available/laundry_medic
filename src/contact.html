@@ -66,7 +66,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li> <a href="service.html">Service </a> </li>
-    <li> <a href="#">Tips</a></li>
+    <li> <a href="tips.html">Tips</a></li>
   </ul>
 
   <button class="contact-btn"><a href="contact.html">Contact</a></button>
@@ -88,7 +88,11 @@
 
   <div class="contact-section__layout">
 
-    <form class="contact-form">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+
+          <input type="hidden" name="access_key">
+    <input type="hidden" name="subject" value="Contact-Form">
+
       <div class="contact-form__group">
         <label class="contact-form__label">Name</label>
         <input class="contact-form__input" type="text" placeholder="Your name" name="name" required>
