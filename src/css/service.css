@@ -286,7 +286,7 @@ body {
 }
 
 .service{
-  padding:8rem 6rem;
+  padding-top: 4rem;
 }
 
 .service__container{
@@ -354,6 +354,7 @@ body {
   align-items: center;
   gap: 6rem;
   padding: 8rem 6rem;
+  margin-top: 7rem;
   background: #f7f7f7;
 }
 
@@ -436,6 +437,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 .cta-video video {
@@ -646,7 +648,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   .services-hero__title{font-size:8rem;}
   .cta-video__content h2{font-size:6rem;}
 
-  .service,.service-feature{padding:10rem 12rem;}
+
 }
 
 
@@ -656,7 +658,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
   .services-hero__title{font-size:8rem;}
 
-  .service,.service-feature{padding:6rem 4rem;}
+
 
   .service__title{font-size:6rem;}
   .service-feature__title{font-size:6em;}
