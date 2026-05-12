@@ -534,7 +534,7 @@ body {
 }
 
 .cta__btn{
-  display:inline-flex;
+  display:inline-block;
   align-items:center;
   gap:1.2rem;
   padding:1.8rem 3.6rem;
@@ -545,6 +545,7 @@ body {
   font-size:1.6rem;
   font-weight:600;
   transition:0.3s ease;
+  margin-top: 1rem;
 }
 
 .cta__btn:hover{
