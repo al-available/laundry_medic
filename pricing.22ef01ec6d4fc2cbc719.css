@@ -1,0 +1,991 @@
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/pricing.css ***!
+  \***********************************************************************/
+ 
+html {
+  font-size: 62.5%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+  padding-top: 8rem;
+  background-color: #fcfcfc;
+}
+
+/* ================= NAVBAR ================= */
+
+.main-nav {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.377);
+  backdrop-filter: blur(1.2rem);
+
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
+
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  max-width: 120rem;
+  margin: auto;
+
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.logo-main {
+ font-size: 3rem;
+  color: #2f80ed;
+ letter-spacing: 0.1rem;
+  font-family:Georgia, Times, 'Times New Roman', serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.logo-sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: #070c3c;
+}
+
+
+.menu-btn {
+  font-size: 2.6rem;
+  cursor: pointer;
+  color: #333;
+
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-btn:hover {
+  color: #2f80ed;
+  transform: scale(1.1);
+}
+
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30rem;
+  height: 100vh;
+
+  background: #ffffff;
+
+  z-index: 2000;
+
+  padding: 3rem 2.5rem;
+
+  transition: right 0.4s ease;
+}
+
+
+.mobile-menu.active {
+  right: 0;
+}
+
+
+.close-btn {
+  text-align: right;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+
+.mobile-logo {
+  margin: 3rem 0 4rem;
+}
+
+.mobile-logo h2 {
+ font-size: 3rem;
+  color: #2f80ed;
+ letter-spacing: 0.1rem;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mobile-logo p {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: #0d2545;
+}
+
+
+.mobile-links {
+  list-style: none;
+  margin: 0 0 4rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+
+.mobile-links li {
+  font-size: 1.7rem;
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+
+
+.mobile-links li a {
+  display: block;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  color: #444;
+  border-radius: inherit;
+  transition: all 0.2s ease;
+}
+
+
+.mobile-links li:hover a {
+  background: #f7f7f7;
+  color: #111;
+}
+
+
+.mobile-links li.active a {
+  background: #070c3c;
+  color: #2f80ed;
+  font-weight: 600;
+}
+
+
+.mobile-links li.active {
+  position: relative;
+}
+
+.mobile-links li.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  bottom: 1rem;
+  width: 0.3rem;
+  background: #2f80ed;
+  border-radius: 0.2rem;
+}
+
+
+.mobile-links li:not(:last-child) {
+  border-bottom: 0.1rem solid #f1f1f1;
+}
+
+
+.contact-btn {
+  width: 100%;
+  padding: 1.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  background: #2f80ed;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 1.2rem;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  box-shadow: 0 0.8rem 2rem rgba(240, 73, 36, 0);
+}
+
+
+.contact-btn a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
+.contact-btn:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1.2rem 2.4rem #2f81ed63;
+}
+
+
+.contact-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.6rem 1.2rem rgba(240, 74, 36, 0.2);
+}
+
+
+.pricing-section{
+  width:100%;
+  padding:8rem 2rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.pricing-top{
+  text-align:center;
+  max-width:60rem;
+}
+
+.pricing-label{
+  display:inline-block;
+  font-size:1rem;
+  letter-spacing:0.3rem;
+  color:#3b82f6;
+  margin-bottom:1.8rem;
+  font-weight:600;
+}
+
+.pricing-heading{
+  font-size:6.8rem;
+  line-height:0.95;
+  font-weight:800;
+  color:#111;
+  margin-bottom:2.4rem;
+}
+
+.pricing-heading span{
+  color:#6d6d6d;
+}
+
+.pricing-text{
+  font-size:1.5rem;
+  line-height:1.8;
+  color:#7a7a7a;
+  max-width:48rem;
+  margin:0 auto;
+}
+
+.pricing-image-box{
+  width:100%;
+  max-width:58rem;
+  margin-top:5rem;
+  border-radius:2.4rem;
+  overflow:hidden;
+  box-shadow:0 2rem 4rem rgba(0,0,0,0.12);
+}
+
+.pricing-image{
+  width:100%;
+  display:block;
+  object-fit:cover;
+}
+
+.pricing-quote{
+  margin-top:2rem;
+  font-size:1.2rem;
+  color:#8b8b8b;
+  font-style:italic;
+  text-align:center;
+  max-width:42rem;
+  line-height:1.8;
+}
+
+.pricing-table-section{
+  width:100%;
+  padding:8rem 2rem;
+  display:flex;
+  justify-content:center;
+}
+
+.pricing-table-wrapper{
+  width:100%;
+  max-width:75rem;
+  border-top:0.1rem solid #d9d9d9;
+  border-bottom:0.1rem solid #d9d9d9;
+  padding:2rem 0;
+}
+
+.pricing-table-heading{
+  font-size:4rem;
+  font-weight:800;
+  color:#111;
+  margin-bottom:3rem;
+}
+
+.pricing-table{
+  width:100%;
+}
+
+.pricing-table-header{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  padding-bottom:1.4rem;
+  border-bottom:0.1rem solid #d9d9d9;
+}
+
+.pricing-table-header span{
+  font-size:1rem;
+  color:#8b8b8b;
+  letter-spacing:0.15rem;
+  font-weight:700;
+}
+
+.pricing-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  align-items:center;
+  padding:1.6rem 0;
+  border-bottom:0.1rem solid #d9d9d9;
+}
+
+.pricing-row p{
+  font-size:1.4rem;
+  font-weight:600;
+  color:#111;
+}
+
+.pricing-row span{
+  font-size:1.3rem;
+  font-weight:700;
+  color:#222;
+}
+
+.pricing-row span:last-child{
+  color:#6f6f6f;
+}
+
+.laundry-pricing-section{
+  width:100%;
+  max-width:75rem;
+  margin:0 auto;
+  padding:6rem 2rem;
+}
+
+.laundry-category{
+  padding:3rem 0;
+  border-bottom:0.1rem solid #d9d9d9;
+}
+
+.laundry-heading{
+  font-size:4rem;
+  font-weight:800;
+  color:#111;
+  margin-bottom:3rem;
+}
+
+.laundry-table{
+  width:100%;
+}
+
+.laundry-header{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  padding-bottom:1.4rem;
+  border-bottom:0.1rem solid #d9d9d9;
+}
+
+.laundry-header span{
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:0.15rem;
+  color:#8d8d8d;
+}
+
+.laundry-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  align-items:center;
+  padding:1.8rem 0;
+  border-bottom:0.1rem solid #d9d9d9;
+}
+
+.laundry-row p{
+  font-size:1.4rem;
+  font-weight:600;
+  color:#111;
+}
+
+.laundry-row span{
+  font-size:1.3rem;
+  font-weight:700;
+  color:#222;
+}
+
+.laundry-row span:last-child{
+  color:#757575;
+}
+
+.laundry-feature{
+  margin-top:5rem;
+  display:grid;
+  grid-template-columns:28rem 1fr;
+  gap:3rem;
+  align-items:center;
+}
+
+.laundry-feature-img-box{
+  width:100%;
+  border-radius:2rem;
+  overflow:hidden;
+  box-shadow:0 1.5rem 3rem rgba(0,0,0,0.12);
+}
+
+.laundry-feature-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.laundry-feature-content h3{
+  font-size:4rem;
+  line-height:1;
+  font-weight:800;
+  color:#111;
+  margin-bottom:1.8rem;
+  max-width:28rem;
+}
+
+.laundry-feature-content p{
+  font-size:1.4rem;
+  line-height:1.8;
+  color:#777;
+  max-width:34rem;
+}
+
+.cta{
+  width:100%;
+}
+
+.cta__top{
+  max-width:72rem;
+  margin:6rem auto;
+  background:#efefef;
+  border-radius:2.4rem;
+  padding:4rem;
+}
+
+.cta__top-title{
+  font-size:2rem;
+  font-weight:700;
+  color:#111;
+  margin-bottom:2.8rem;
+}
+
+.cta__list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:2.2rem;
+}
+
+.cta__list li{
+  position:relative;
+  padding-left:1.6rem;
+  font-size:1.7rem;
+  line-height:1.8;
+  color:#5f5f5f;
+}
+
+.cta__list li::before{
+  content:"•";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#1f6fe5;
+  font-size:1.6rem;
+}
+
+.cta__list span{
+  font-weight:700;
+  color:#111;
+}
+
+.cta__bottom{
+  background:#1f6fe5;
+  padding:10rem 2rem;
+  text-align:center;
+}
+
+.cta__title{
+  font-size:6rem;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:2rem;
+  line-height:1.1;
+}
+
+.cta__text{
+  font-size:1.8rem;
+  color:rgba(255,255,255,0.8);
+  margin-bottom:3.6rem;
+}
+
+.cta__btn{
+  display:inline-flex;
+  align-items:center;
+  gap:1.2rem;
+  padding:1.8rem 3.6rem;
+  background:#fff;
+  border-radius:999rem;
+  text-decoration:none;
+  color:#111;
+  font-size:1.6rem;
+  font-weight:600;
+  transition:0.3s ease;
+}
+
+.cta__btn:hover{
+  transform:translateY(-0.3rem);
+}
+
+.cta__btn span{
+  font-size:2rem;
+}
+
+
+.ft {
+  margin-top:0;
+  background: #0b0c0f;
+  color: #d1d5db;
+  padding: 6rem 4rem 2rem;
+}
+
+
+.ft__container {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+
+.ft__logo {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2f80ed;
+  margin-bottom: 1.6rem;
+}
+
+.sub {
+font-weight: 600;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ft__logo-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.ft__desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+
+.ft__heading {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #9ca3af;
+  margin-bottom: 1.6rem;
+}
+
+.ft__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ft__list li {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+
+.ft__list a {
+  text-decoration: none;
+  color: #d1d5db;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.ft__list a:hover {
+  color: #ffffff;
+}
+
+
+.ft__list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 0;
+  height: 0.1rem;
+  background: #ffffff;
+  transition: width 0.2s ease;
+}
+
+.ft__list a:hover::after {
+  width: 100%;
+}
+
+.ft__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+
+.ft__item svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  stroke: #9ca3af;
+  fill: none;
+  stroke-width: 1.6;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  transition: stroke 0.2s ease;
+}
+
+
+.ft__item:hover svg {
+  stroke: #ffffff;
+}
+
+
+.ft__bottom {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #1f2937;
+
+  text-align: center;
+  font-size: 1.3rem;
+  color: #6b7280;
+}
+
+
+/* ================= XXL DESKTOP ================= */
+
+@media (max-width: 1440px){
+
+  html{
+    font-size:60%;
+  }
+
+  .pricing-heading{
+    font-size:6rem;
+  }
+
+  .cta__title{
+    font-size:5.4rem;
+  }
+
+}
+
+
+/* ================= LAPTOP ================= */
+
+@media (max-width: 1200px){
+
+  html{
+    font-size:58%;
+  }
+
+  .nav-container{
+    padding:2rem 3rem;
+  }
+
+  .pricing-heading{
+    font-size:5.6rem;
+  }
+
+  .pricing-table-heading,
+  .laundry-heading,
+  .laundry-feature-content h3{
+    font-size:3.4rem;
+  }
+
+  .laundry-feature{
+    grid-template-columns:24rem 1fr;
+    gap:2.4rem;
+  }
+
+  .cta__title{
+    font-size:4.8rem;
+  }
+
+  .ft__container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+/* ================= TABLETS ================= */
+
+@media (max-width: 992px){
+
+  html{
+    font-size:56%;
+  }
+
+  body{
+    padding-top:7rem;
+  }
+
+  .pricing-section{
+    padding:7rem 2.4rem;
+  }
+
+  .pricing-heading{
+    font-size:5rem;
+  }
+
+  .pricing-text{
+    font-size:1.6rem;
+  }
+
+  .pricing-table-heading,
+  .laundry-heading{
+    font-size:3rem;
+  }
+
+  .laundry-feature{
+    grid-template-columns:1fr;
+  }
+
+  .laundry-feature-content h3{
+    max-width:100%;
+  }
+
+  .laundry-feature-content p{
+    max-width:100%;
+  }
+
+  .cta__top{
+    padding:3.2rem;
+  }
+
+  .cta__title{
+    font-size:4.2rem;
+  }
+
+  .cta__text{
+    font-size:1.7rem;
+  }
+
+}
+
+
+/* ================= LARGE MOBILE ================= */
+
+@media (max-width: 768px){
+
+  html{
+    font-size:54%;
+  }
+
+  .nav-container{
+    padding:1.8rem 2rem;
+  }
+
+  .logo-main{
+    font-size:2.6rem;
+  }
+
+  .logo-sub{
+    font-size:1.3rem;
+  }
+
+  .mobile-menu{
+    width:100%;
+  }
+
+  .pricing-section{
+    padding:6rem 2rem;
+  }
+
+  .pricing-heading{
+    font-size:4.4rem;
+    line-height:1;
+  }
+
+  .pricing-text{
+    font-size:1.5rem;
+  }
+
+  .pricing-image-box{
+    margin-top:4rem;
+  }
+
+  .pricing-table-section{
+    padding:6rem 2rem;
+  }
+
+  .pricing-table-heading,
+  .laundry-heading{
+    font-size:2.6rem;
+  }
+
+  .pricing-table-header,
+  .pricing-row,
+  .laundry-header,
+  .laundry-row{
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:1rem;
+  }
+
+  .cta__top{
+    margin:4rem 2rem;
+  }
+
+  .cta__bottom{
+    padding:8rem 2rem;
+  }
+
+  .cta__title{
+    font-size:3.8rem;
+  }
+
+  .cta__btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .ft{
+    padding:5rem 2rem 2rem;
+  }
+
+  .ft__container{
+    grid-template-columns:1fr;
+    gap:3rem;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px){
+
+  html{
+    font-size:50%;
+  }
+
+  .pricing-label{
+    font-size:0.9rem;
+  }
+
+  .pricing-heading{
+    font-size:3.8rem;
+  }
+
+  .pricing-text{
+    line-height:1.7;
+  }
+
+  .pricing-table-wrapper{
+    overflow-x:auto;
+  }
+
+  .pricing-table{
+    min-width:50rem;
+  }
+
+  .laundry-table{
+    min-width:50rem;
+  }
+
+  .laundry-feature-content h3{
+    font-size:3rem;
+  }
+
+  .cta__top{
+    padding:2.6rem;
+    border-radius:2rem;
+  }
+
+  .cta__title{
+    font-size:3.2rem;
+  }
+
+  .cta__text{
+    font-size:1.5rem;
+  }
+
+  .cta__list li{
+    font-size:1.5rem;
+  }
+
+  .ft__desc,
+  .ft__list li{
+    font-size:1.3rem;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px){
+
+  html{
+    font-size:47%;
+  }
+
+  .pricing-heading{
+    font-size:3.2rem;
+  }
+
+  .pricing-table-heading,
+  .laundry-heading{
+    font-size:2.2rem;
+  }
+
+  .pricing-row p,
+  .laundry-row p{
+    font-size:1.3rem;
+  }
+
+  .pricing-row span,
+  .laundry-row span{
+    font-size:1.2rem;
+  }
+
+  .cta__title{
+    font-size:2.8rem;
+  }
+
+  .cta__btn{
+    padding:1.6rem 2.4rem;
+    font-size:1.5rem;
+  }
+
+  .mobile-links li a{
+    padding:1.2rem 1.4rem;
+  }
+
+}
+
