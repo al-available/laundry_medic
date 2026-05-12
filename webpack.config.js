@@ -11,6 +11,7 @@ export default {
         service: './src/service.js',
         contact: './src/contact.js',
         tips: './src/tips.js',
+        pricing: './src/pricing.js',
         article1: './src/article1.js',
     },
     output: {
@@ -48,6 +49,11 @@ export default {
             template: './src/tips.html',
             filename: 'tips.html',
             chunks: ['tips'],
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pricing.html',
+            filename: 'pricing.html',
+            chunks: ['pricing'],
         }),
         new HtmlWebpackPlugin({
             template: './src/article1.html',
