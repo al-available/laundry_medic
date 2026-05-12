@@ -686,66 +686,73 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-/* ================= XXL DESKTOP ================= */
-
-@media (max-width: 1440px){
-
-  html{
-    font-size:60%;
-  }
+/* =========================
+   LARGE DESKTOPS
+========================= */
+@media (max-width: 1200px) {
 
   .pricing-heading{
-    font-size:6rem;
+    font-size:5.8rem;
   }
 
   .cta__title{
-    font-size:5.4rem;
+    font-size:5rem;
+  }
+
+  .ft__container{
+    grid-template-columns: repeat(2,1fr);
   }
 
 }
 
 
-/* ================= LAPTOP ================= */
-
-@media (max-width: 1200px){
+/* =========================
+   TABLETS & SMALL LAPTOPS
+========================= */
+@media (max-width: 992px) {
 
   html{
     font-size:58%;
   }
 
   .nav-container{
-    padding:2rem 3rem;
+    padding:1.8rem 2rem;
   }
 
   .pricing-heading{
-    font-size:5.6rem;
+    font-size:5rem;
   }
 
   .pricing-table-heading,
   .laundry-heading,
   .laundry-feature-content h3{
-    font-size:3.4rem;
+    font-size:3.2rem;
   }
 
   .laundry-feature{
-    grid-template-columns:24rem 1fr;
-    gap:2.4rem;
+    grid-template-columns:1fr;
+  }
+
+  .laundry-feature-content p,
+  .laundry-feature-content h3{
+    max-width:100%;
+  }
+
+  .cta__top{
+    padding:3rem;
   }
 
   .cta__title{
-    font-size:4.8rem;
-  }
-
-  .ft__container{
-    grid-template-columns:repeat(2,1fr);
+    font-size:4.5rem;
   }
 
 }
 
 
-/* ================= TABLETS ================= */
-
-@media (max-width: 992px){
+/* =========================
+   TABLETS
+========================= */
+@media (max-width: 768px) {
 
   html{
     font-size:56%;
@@ -755,64 +762,8 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top:7rem;
   }
 
-  .pricing-section{
-    padding:7rem 2.4rem;
-  }
-
-  .pricing-heading{
-    font-size:5rem;
-  }
-
-  .pricing-text{
-    font-size:1.6rem;
-  }
-
-  .pricing-table-heading,
-  .laundry-heading{
-    font-size:3rem;
-  }
-
-  .laundry-feature{
-    grid-template-columns:1fr;
-  }
-
-  .laundry-feature-content h3{
-    max-width:100%;
-  }
-
-  .laundry-feature-content p{
-    max-width:100%;
-  }
-
-  .cta__top{
-    padding:3.2rem;
-  }
-
-  .cta__title{
-    font-size:4.2rem;
-  }
-
-  .cta__text{
-    font-size:1.7rem;
-  }
-
-}
-
-
-/* ================= LARGE MOBILE ================= */
-
-@media (max-width: 768px){
-
-  html{
-    font-size:54%;
-  }
-
-  .nav-container{
-    padding:1.8rem 2rem;
-  }
-
   .logo-main{
-    font-size:2.6rem;
+    font-size:2.5rem;
   }
 
   .logo-sub{
@@ -828,25 +779,21 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   .pricing-heading{
-    font-size:4.4rem;
-    line-height:1;
+    font-size:4.2rem;
+    line-height:1.1;
   }
 
   .pricing-text{
-    font-size:1.5rem;
+    font-size:1.4rem;
   }
 
   .pricing-image-box{
     margin-top:4rem;
   }
 
-  .pricing-table-section{
-    padding:6rem 2rem;
-  }
-
   .pricing-table-heading,
   .laundry-heading{
-    font-size:2.6rem;
+    font-size:2.8rem;
   }
 
   .pricing-table-header,
@@ -858,20 +805,15 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   .cta__top{
-    margin:4rem 2rem;
-  }
-
-  .cta__bottom{
-    padding:8rem 2rem;
+    border-radius:2rem;
   }
 
   .cta__title{
     font-size:3.8rem;
   }
 
-  .cta__btn{
-    width:100%;
-    justify-content:center;
+  .cta__text{
+    font-size:1.6rem;
   }
 
   .ft{
@@ -886,82 +828,57 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 576px){
+/* =========================
+   MOBILE DEVICES
+========================= */
+@media (max-width: 576px) {
 
   html{
-    font-size:50%;
+    font-size:52%;
+  }
+
+  .nav-container{
+    padding:1.5rem;
+  }
+
+  .logo{
+    gap:0.8rem;
+  }
+
+  .logo-main{
+    font-size:2.2rem;
+  }
+
+  .logo-sub{
+    font-size:1.1rem;
+    letter-spacing:0.2rem;
+  }
+
+  .menu-btn{
+    font-size:2.2rem;
+  }
+
+  .mobile-menu{
+    padding:2.5rem 2rem;
+  }
+
+  .pricing-heading{
+    font-size:3.5rem;
   }
 
   .pricing-label{
     font-size:0.9rem;
   }
 
-  .pricing-heading{
-    font-size:3.8rem;
-  }
-
   .pricing-text{
+    font-size:1.3rem;
     line-height:1.7;
   }
 
-  .pricing-table-wrapper{
-    overflow-x:auto;
-  }
-
-  .pricing-table{
-    min-width:50rem;
-  }
-
-  .laundry-table{
-    min-width:50rem;
-  }
-
-  .laundry-feature-content h3{
-    font-size:3rem;
-  }
-
-  .cta__top{
-    padding:2.6rem;
-    border-radius:2rem;
-  }
-
-  .cta__title{
-    font-size:3.2rem;
-  }
-
-  .cta__text{
-    font-size:1.5rem;
-  }
-
-  .cta__list li{
-    font-size:1.5rem;
-  }
-
-  .ft__desc,
-  .ft__list li{
-    font-size:1.3rem;
-  }
-
-}
-
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 400px){
-
-  html{
-    font-size:47%;
-  }
-
-  .pricing-heading{
-    font-size:3.2rem;
-  }
-
   .pricing-table-heading,
-  .laundry-heading{
-    font-size:2.2rem;
+  .laundry-heading,
+  .laundry-feature-content h3{
+    font-size:2.4rem;
   }
 
   .pricing-row p,
@@ -974,18 +891,60 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:1.2rem;
   }
 
+  .cta__top{
+    padding:2.5rem 2rem;
+    width: 40rem;
+  }
+
   .cta__title{
-    font-size:2.8rem;
+    font-size:3rem;
   }
 
   .cta__btn{
-    padding:1.6rem 2.4rem;
-    font-size:1.5rem;
+    width:100%;
+    justify-content:center;
   }
 
-  .mobile-links li a{
-    padding:1.2rem 1.4rem;
+  .ft__desc,
+  .ft__list li{
+    font-size:1.3rem;
   }
 
 }
+
+
+/* =========================
+   SMALL MOBILE DEVICES
+========================= */
+@media (max-width: 400px) {
+
+  html{
+    font-size:50%;
+  }
+
+  .pricing-heading{
+    font-size:3rem;
+  }
+
+  .cta__title{
+    font-size:2.6rem;
+  }
+
+  .pricing-table-header span,
+  .laundry-header span{
+    font-size:0.9rem;
+  }
+
+  .pricing-row,
+  .laundry-row{
+    padding:1.3rem 0;
+  }
+
+  .contact-btn{
+    padding:1.4rem;
+    font-size:1.4rem;
+  }
+
+}
+
 
