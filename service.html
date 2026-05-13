@@ -28,7 +28,7 @@
 <!-- <meta name="twitter:image" content="https://laundrymedic.com/service-preview.jpg"> -->
 
 <!-- <link rel="icon" href="/favicon.ico"> -->
-<script defer src="service.js"></script><link href="service.9e0b21dc49de94209e0e.css" rel="stylesheet"></head>
+<script defer src="service.js"></script><link href="service.c69da0a4373dbe52f9d4.css" rel="stylesheet"></head>
 <body>
      <header role="banner">
 
@@ -101,12 +101,126 @@
       <p class="service__text">
         Drop off your laundry and let us do the rest. We wash, dry, and neatly fold your clothes using gentle, high-quality detergents.
       </p>
-      <div class="service__price">From GH₵ 17 per kg</div>
-      <a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20a%20Wash n Fold" target="_blank" class="service__btn">Book Now →</a>
-      <a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a>
+      <div class="service__price">From GH₵ 17</div>
+         <button class="service__btn1" id="openPopup">
+      Book Now
+    </button>
     </div>
 
   </div>
+
+<div class="pricing-popup" id="pricingPopup">
+  <div class="pricing-popup__overlay"></div>
+
+  <div class="pricing-popup__box">
+    <button class="pricing-popup__close" id="closePopup">
+      &times;
+    </button>
+
+    <h2 class="pricing-popup__title">Wash & Fold</h2>
+
+    <p class="pricing-popup__subtitle">
+      Item prices for this service. 
+    </p>
+
+    <div class="pricing-popup__head">
+      <span>ITEM</span>
+      <span>WASH & IRON</span>
+    </div>
+
+    <div class="pricing-popup__items">
+
+      <div class="pricing-popup__item">
+        <span>Singlet</span>
+        <strong>GHC 6.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Shirts</span>
+        <strong>GHC 10.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>T-Shirt</span>
+        <strong>GHC 10.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Shorts</span>
+        <strong>GHC 10.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Blouse</span>
+        <strong>GHC 10.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Pullover</span>
+        <strong>GHC 10.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Skirts</span>
+        <strong>GHC 10.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Trousers</span>
+        <strong>GHC 12.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Caftan Top</span>
+        <strong>GHC 12.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Kids Caftan Set</span>
+        <strong>GHC 15.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Bed Sheet</span>
+        <strong>GHC 15.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Jalabia</span>
+        <strong>GHC 20.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Dress</span>
+        <strong>GHC 20.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Skirts and Top</span>
+        <strong>GHC 20.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Kaba and Slit</span>
+        <strong>GHC 20.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Kente Kaba and Slit</span>
+        <strong>GHC 25.00</strong>
+      </div>
+
+      <div class="pricing-popup__item">
+        <span>Bed Sheet Set</span>
+        <strong>GHC 30.00</strong>
+      </div>
+
+    </div>
+
+ <a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20a%20Wash n Fold" target="_blank" class="service__btn">Book Now →</a>
+       <a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a>
+  </div>
+</div>
 </section>
 
 
@@ -122,8 +236,9 @@
 
     <span class="service-feature__price">From GH₵ 5/item</span>
     <div>
-<span><a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20%20Ironing n Pressing" target="_blank" class="service__btn">Book Now →</a></span>
-      <span><a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a></span>
+    <button class="service__btn1" id="openIroningModal">
+      Book Now
+    </button>
     </div>
      
   </div>
@@ -132,6 +247,128 @@
     <img src="813155211a699beaa0f1.jpg" alt="Professional ironing service in Accra">
   </div>
 
+
+
+<div class="pricing-modal" id="pricingModal">
+
+  <div class="pricing-modal-box">
+
+    <button class="pricing-close-btn" id="closePricingModal">
+      ×
+    </button>
+
+    <h2 class="pricing-modal-heading">
+      Ironing & Pressing
+    </h2>
+
+    <p class="pricing-modal-text">
+      Item prices for this service. 
+    </p>
+
+    <div class="pricing-modal-table">
+
+      <div class="pricing-modal-header">
+        <span>ITEM</span>
+        <span>IRON ONLY</span>
+      </div>
+
+      <div class="pricing-modal-scroll">
+
+        <div class="pricing-modal-row">
+          <p>Trousers</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Shirts</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>T-Shirt</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Shorts</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Blouse</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Pullover</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Skirts</p>
+          <span>GHC 5.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Singlet</p>
+          <span>GHC 6.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Caftan Top</p>
+          <span>GHC 6.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Bed Sheet</p>
+          <span>GHC 7.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Kids Caftan Set</p>
+          <span>GHC 7.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Jalabia</p>
+          <span>GHC 10.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Dress</p>
+          <span>GHC 10.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Skirts and Top</p>
+          <span>GHC 10.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Kaba and Slit</p>
+          <span>GHC 10.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Kente Kaba and Slit</p>
+          <span>GHC 15.00</span>
+        </div>
+
+        <div class="pricing-modal-row">
+          <p>Bed Sheet Set</p>
+          <span>GHC 15.00</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  <span><a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20%20Ironing n Pressing" target="_blank" class="service__btn">Book Now →</a></span>
+      <span><a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a></span>
+
+  </div>
+
+</div>
 </section>
 
 
@@ -149,11 +386,88 @@
        Special care for suits, dresses, silk, and other delicate fabrics. Our dry cleaning process keeps your finest garments looking new.
       </p>
       <div class="service__price">From GH₵ 30</div>
-  <a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20Dry Cleaning" target="_blank" class="service__btn">Book Now →</a>
-      <a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a>
-    </div>
+    <button class="service__btn1" id="openDryCleaningModal">
+     Book Now
+    </button>
 
   </div>
+
+
+<div class="dry-cleaning-modal" id="dryCleaningModal">
+
+  <div class="dry-cleaning-modal-box">
+
+    <button class="dry-cleaning-close-btn" id="closeDryCleaningModal">
+      ×
+    </button>
+
+    <h2 class="dry-cleaning-modal-heading">
+      Dry Cleaning
+    </h2>
+
+    <p class="dry-cleaning-modal-text">
+      Item prices for this service. 
+    </p>
+
+    <div class="dry-cleaning-table">
+
+      <div class="dry-cleaning-header">
+        <span>ITEM</span>
+        <span>WASH & IRON</span>
+      </div>
+
+      <div class="dry-cleaning-scroll">
+
+        <div class="dry-cleaning-row">
+          <p>Jacket</p>
+          <span>GHC 20.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Caftan Set</p>
+          <span>GHC 25.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Suit</p>
+          <span>GHC 30.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Men's Cloth</p>
+          <span>GHC 30.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Three Piece Caftan Set</p>
+          <span>GHC 30.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Smock — Without Sleeves</p>
+          <span>GHC 30.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Smock — With Sleeves</p>
+          <span>GHC 35.00</span>
+        </div>
+
+        <div class="dry-cleaning-row">
+          <p>Smock — Three Pieces</p>
+          <span>GHC 40.00</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  <a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20Dry Cleaning" target="_blank" class="service__btn">Book Now →</a>
+      <a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a>
+
+  </div>
+
+</div>
 </section>
 
 <section class="service-feature" id="stainRemoval">
@@ -168,8 +482,9 @@ Stubborn stains don't stand a chance. Our expert technicians use advanced soluti
     <span class="service-feature__price">From GH₵ 20</span>
 
      <div>
-<span><a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20%20Ironing n Pressing" target="_blank" class="service__btn">Book Now →</a></span>
-      <span><a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a></span>
+  <button class="service__btn1" id="openFabricCarePricing">
+    Book Now
+  </button>
     </div>
   </div>
 
@@ -177,6 +492,67 @@ Stubborn stains don't stand a chance. Our expert technicians use advanced soluti
     <img src="18b09f202fc020a5e210.jpg" alt="Stain removal laundry service">
   </div>
 
+
+<section class="fabric-care-pricing">
+
+
+  <div class="fabric-care-pricing__overlay" id="fabricCarePricingModal">
+
+    <div class="fabric-care-pricing__modal">
+
+      <button class="fabric-care-pricing__close" id="closeFabricCarePricing">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="fabric-care-pricing__header">
+
+        <h2>
+          Stain Removal 
+        </h2>
+
+        <p>
+          Item prices for this service. 
+        </p>
+
+      </div>
+
+      <div class="fabric-care-pricing__table">
+
+        <div class="fabric-care-pricing__table-head">
+          <span>Item</span>
+          <span>Price</span>
+        </div>
+
+        <div class="fabric-care-pricing__table-row">
+          <span>Light stain treatment</span>
+          <span>Quoted on inspection</span>
+        </div>
+
+        <div class="fabric-care-pricing__table-row">
+          <span>Heavy / set-in stains</span>
+          <span>Quoted on inspection</span>
+        </div>
+
+        <div class="fabric-care-pricing__table-row">
+          <span>Delicate fabric restoration</span>
+          <span>Quoted on inspection</span>
+        </div>
+
+      </div>
+
+<span><a href="https://wa.me/+233547780864?text=I%20want%20to%20book%20%20Ironing n Pressing" target="_blank" class="service__btn">Book Now →</a></span>
+      <span><a href="tel:+233547780864" target="_blank" class="service__btn">Call Now →</a></span>
+
+    </div>
+
+  </div>
+
+</section>
+
+  
 </section>
 
 
